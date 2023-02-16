@@ -97,8 +97,8 @@ function LoginScreen({navigation }) {
 
               />
           </View> */}
-           <CustomInputText name={"البريد الالكترونى"}></CustomInputText>
-          <CustomInputText name={"الرقم السرى"}></CustomInputText>
+           <CustomInputText name={"البريد الالكترونى"} title={"اكتب هنا..."}></CustomInputText>
+          <CustomInputText name={"الرقم السرى"} title={"اكتب هنا..."}></CustomInputText>
           {/* <View style={{ backgroundColor: "#FFFFFF", width: "95%", borderRadius: 20, margin: "5%" }}>
             <Text style={{ alignSelf: "flex-end", margin: "2%", fontFamily: "Tajawal-Bold" }}>
               الرقم السرى    </Text>

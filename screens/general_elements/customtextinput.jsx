@@ -13,7 +13,7 @@ const CustomInputText = (props) => {
       />
       <TextInput
         style={styles.textInputStyle}
-        placeholder="اكتب هنا.."
+        placeholder={props.title}
 
       />
     </View>
