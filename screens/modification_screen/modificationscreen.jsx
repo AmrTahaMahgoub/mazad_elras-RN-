@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View, Image, Pressable, Text } from 'react-native';
-import CustomTextButton from './general_elements/customtextbtton';
-import CustomInputText from './general_elements/customtextinput';
+import CustomTextButton from './general_components/customtextbtton';
+import CustomInputText from './general_components/customtextinput';
 
 
 

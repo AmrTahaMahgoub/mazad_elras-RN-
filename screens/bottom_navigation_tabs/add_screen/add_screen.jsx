@@ -5,8 +5,8 @@ import { Picker } from "@react-native-picker/picker";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { ScrollView } from 'react-native-gesture-handler';
 // import DropDownPicker from 'react-native-dropdown-picker';
-import CustomInputText from './general_elements/customtextinput';
-import CustomTextButton from './general_elements/customtextbtton';
+import CustomInputText from './general_components/customtextinput';
+import CustomTextButton from './general_components/customtextbtton';
 
 function AddScreen() {
   const [categoty, setCountry] = useState('Unknown');

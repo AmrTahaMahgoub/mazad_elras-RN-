@@ -148,59 +148,60 @@ function AccountScreen() {
                     margin:"3%"
  
 }}>
-<View style={{
-
-
-flexDirection: 'row',
-alignContent: 'center',
-alignItems: 'center',
-justifyContent:"space-between",
-
- backgroundColor:"#FFFFFF",
-
-}}>
-     <Picker
-
-selectedValue={country}
-onValueChange={(value, index) => setCountry(value)}
-mode="dropdown" // Android only
-style={{
-  borderRadius: Math.round(Dimensions.get('window').width + Dimensions.get('window').height) / 2,
-  width: Dimensions.get('window').width * 0.3,
- // height: Dimensions.get('window').width * 0.05,
-  backgroundColor: "#FF4967",
-  justifyContent: 'center',
-  alignItems: 'center'
- // marginVertical: 5,
- // width: 50,
- // padding: 10,
- // borderWidth: 1,
- // borderColor: "#666",
-}}
->
-<Picker.Item label="اللغه" value="اللغه" />
-<Picker.Item label="العربيه" value="العربيه" />
-<Picker.Item label="الانجليزيه" value="الانجليزيه" />
-
-</Picker>
-
-<View style={{ flexDirection: 'row',
-                      alignContent: 'flex-end',
+<View style={{ 
+                      // margin:"3%",
+                        paddingHorizontal:"3%",
+                      
+                        flexDirection: 'row',
+                      alignContent: 'center',
                       alignItems: 'center',
+                      justifyContent:"space-between",
+                      
+                      width:"100%", backgroundColor:"#FFFFFF",borderRadius:20
+                      }}>
+                        {/* <View style={{
+                    borderRadius: Math.round(Dimensions.get('window').width + Dimensions.get('window').height) / 2,
+                    width: Dimensions.get('window').width * 0.05,
+                    height: Dimensions.get('window').width * 0.05,
+                    backgroundColor: "#FF4967",
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                  }}>
+                    <Text style={{ color: "white", fontSize: 10, fontFamily: "Tajawal-Bold" }}>2</Text>
+                  </View> */}
+                     <Picker
+        selectedValue={country}
+        onValueChange={(value, index) => setCountry(value)}
+        mode="dropdown"
+        style={{
+
+          width: "33%",
+        //  backgroundColor:"grey",
+         // height:5,
+
+        }}
+      >
+        <Picker.Item style={{ fontSize: 10, fontFamily: "Tajawal-ExtraBold", }} label="اللغه" value="اللغه" />
+        <Picker.Item label="العربيه" value="العربيه" />
+        <Picker.Item label="الانجليزيه" value="الانجليزيه" />
+
+      </Picker>
+                     <View style={{ flexDirection: 'row',
+                     alignContent: 'flex-end',
+                     alignItems: 'center',
                     justifyContent:"flex-end",
                    
-                    padding:"3%",
-                  }}>
-                       <Text style={{   fontFamily: "Tajawal-Bold",paddingRight:"6%" }}> اللغه</Text>
+                 }}>
+                     <Text style={{   fontFamily: "Tajawal-Bold",paddingRight:"5%" }}>دفع المستحقات </Text>
                         <Image
-                source={require("../assets/boldsettingicon.png")}></Image>
-                  </View>
-                  <View
-        style={{  borderBottomColor: 'black',
+                source={require("../assets/moneyicon.png")}></Image>
+                     </View>
+                      </View>
+                      <View
+        style={{  borderBottomColor: '#F4F4F4',
         borderBottomWidth: 1,
     }}
       />
-</View>
                    <View style={{  flexDirection: 'row',
                       alignContent: 'flex-end',
                       alignItems: 'center',
