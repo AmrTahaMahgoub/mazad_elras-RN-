@@ -3,11 +3,12 @@ import React from 'react';
 
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
-import LoginScreen from './login_screen/LoginScreen';
-import Tabs from './bottom_navigation_tabs/bottom_tab';
-import RegisterScreen from './register_screen/registerscreen';
+
+import Tabs from './bottom_tab';
+import RegisterScreen from './registerscreen';
 import { TouchableOpacity, Text, View, Image, Dimensions } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import LoginScreen from './LoginScreen';
 
 
 const Stack = createStackNavigator();
@@ -17,13 +18,13 @@ function App() {
     <NavigationContainer>
       
       <Stack.Navigator>
-      {/* <Stack.Screen
+      <Stack.Screen
           name="Login_Screen"
           component={LoginScreen}
           options={{
             header: () => null,
           }}
-        /> */}
+        />
     
       <Stack.Screen
           name="bottom_tabs"

@@ -2,11 +2,11 @@
 import { Image, TouchableOpacity, Dimensions, View, Text } from 'react-native';
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './home_screen/home_screen';
-import FavoriteScreen from './favorite_screen/favorite_screen';
-import AddScreen from './add_screen/add_screen';
-import CategoriesScreen from './categories_screen/categories_screen';
-import AccountScreen from './account_screen/account_screen';
+import HomeScreen from "./home_screen";
+import FavoriteScreen  from "./favorite_screen";
+import AddScreen from "./add_screen";
+import CategoriesScreen from "./categories_screen";
+import AccountScreen from './account_screen';
 
 
 

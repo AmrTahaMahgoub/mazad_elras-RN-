@@ -1,11 +1,11 @@
-/* eslint-disable prettier/prettier */
+
 import React, { useState } from 'react';
 import { View, Text, Image, TextInput,StyleSheet } from 'react-native';
 import { Picker } from "@react-native-picker/picker";
 import Icon from 'react-native-vector-icons/FontAwesome';
 import { ScrollView } from 'react-native-gesture-handler';
-// import DropDownPicker from 'react-native-dropdown-picker';
 import CustomInputText from './general_components/customtextinput';
+
 import CustomTextButton from './general_components/customtextbtton';
 
 function AddScreen() {

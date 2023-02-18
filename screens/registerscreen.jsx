@@ -1,8 +1,7 @@
 
 import React from 'react';
 import {StyleSheet ,View} from 'react-native';
-import CustomInputText from '../general_components/customtextinput';
-import CustomTextButton from '../general_components/customtextbtton';
+
 
 
 

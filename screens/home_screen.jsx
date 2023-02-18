@@ -2,7 +2,8 @@
 
 import {View, Image, TextInput, Modal} from 'react-native';
 import React from 'react';
-import TopTaps from '../../tob_tabs/top_tabs';
+import TopTaps from "./top_tabs";
+
 function HomeScreen() {
   return (
     <>
