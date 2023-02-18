@@ -192,7 +192,7 @@ function AccountScreen() {
                     justifyContent:"flex-end",
                    
                  }}>
-                     <Text style={{   fontFamily: "Tajawal-Bold",paddingRight:"5%" }}>دفع المستحقات </Text>
+                     <Text style={{   fontFamily: "Tajawal-Bold",paddingRight:"5%" }}> اللغه </Text>
                         <Image
                 source={require("../assets/moneyicon.png")}></Image>
                      </View>

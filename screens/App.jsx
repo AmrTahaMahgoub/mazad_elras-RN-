@@ -3,11 +3,10 @@ import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Tabs from './bottom_tab';
-import RegisterScreen from './registerscreen';
 import { TouchableOpacity, Text, View, Image, Dimensions } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-//import LoginScreen from "../login_screen/login_screen_view";
 import LoginScreen from './login_screen/login_screen_view';
+import RegisterScreen from './register_screen/register_screen_view';
 
 
 const Stack = createStackNavigator();
@@ -124,8 +123,8 @@ function App() {
         /> */}
 
         {/* <Stack.Screen
-          name="tabs"
-          component={Tabs}
+          name="RegiterScreen"
+          component={RegisterScreen}
           options={{
             header: () => null,
           }}

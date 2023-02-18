@@ -6,7 +6,7 @@ import HomeScreen from "./home_screen";
 import FavoriteScreen  from "./favorite_screen";
 import AddScreen from "./add_screen";
 import CategoriesScreen from "./categories_screen";
-import AccountScreen from './account_screen';
+import AccountScreen from './account_screen'
 
 
 
