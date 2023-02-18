@@ -6,9 +6,9 @@ const CustomTextButton=(props)=>{
     return(
         <TouchableOpacity
         style={styles.button}
-        onPress={() => {
-      
-        }}>
+        onPress={props.onPress}
+        
+        >
         <Text style={styles.buttontext}>{props.title}</Text>
       </TouchableOpacity>
     );
