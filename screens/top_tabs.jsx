@@ -1,15 +1,12 @@
-
 import React from 'react';
-import { StyleSheet, } from 'react-native';
-import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+import {StyleSheet} from 'react-native';
+import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
 import All from './all_screen/all_screen_view';
 import Cars from './cars_screen/cars_screen_view';
 import Animals from './animals_screen/animals_screen_view';
 import Foods from './foods_screen/foods_screen_view';
 import Building from './building_screen/building_screen_view';
 import Electronics from './electronics_screen/electronics_screen_view';
-
-
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -18,22 +15,30 @@ export default function TopTaps() {
     <Tab.Navigator
       initialRouteName="الكل"
       screenOptions={{
-
-        tabBarIndicatorStyle: { backgroundColor: "#fff", height: 7, borderTopEndRadius: 20, borderTopStartRadius: 20 },
+        tabBarIndicatorStyle: {
+          backgroundColor: '#fff',
+          height: 7,
+          borderTopEndRadius: 20,
+          borderTopStartRadius: 20,
+        },
 
         tabBarStyle: {
           backgroundColor: '#6A7Aff',
-          //borderRadius:10
         },
-        tabBarLabelStyle: { fontSize: 9, fontWeight: "bold", alignSelf: "auto", color: "#FFFFFF", fontFamily: "Tajawal-Light" },
+        tabBarLabelStyle: {
+          fontSize: 9,
+          fontWeight: 'bold',
+          alignSelf: 'auto',
+          color: '#FFFFFF',
+          fontFamily: 'Tajawal-Light',
+        },
         animationEnabled: true,
-
       }}>
       <Tab.Screen name="اعلاف" component={Foods} />
-      <Tab.Screen name="حيوانات" component={Cars} />
-      <Tab.Screen name="الكترونات" component={Animals} />
+      <Tab.Screen name="حيوانات" component={Animals} />
+      <Tab.Screen name="الكترونات" component={Electronics} />
       <Tab.Screen name="عقارات" component={Building} />
-      <Tab.Screen name="سيارات" component={Electronics} />
+      <Tab.Screen name="سيارات" component={Cars} />
       <Tab.Screen name="الكل" component={All} />
     </Tab.Navigator>
   );
@@ -42,20 +47,16 @@ export default function TopTaps() {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'column',
-    backgroundColor: "#F4F4",
-  
+    backgroundColor: '#F4F4',
   },
   card: {
     flex: 1,
     flexDirection: 'row',
-    justifyContent: "space-between",
-    height: "80%",
-    width: "95%",
-    backgroundColor: "#FFFFFF",
+    justifyContent: 'space-between',
+    height: '80%',
+    width: '95%',
+    backgroundColor: '#FFFFFF',
     borderRadius: 10,
-    marginVertical: "1%"
+    marginVertical: '1%',
   },
-
-
 });
-
