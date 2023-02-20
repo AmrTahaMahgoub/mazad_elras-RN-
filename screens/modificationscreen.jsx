@@ -1,7 +1,7 @@
 import React from 'react';
 import {StyleSheet, View, Image, Pressable, Text} from 'react-native';
-import CustomTextButton from './general_components/customtextbtton';
-import CustomInputText from './general_components/customtextinput';
+import CustomTextButton from './general_components/customtextbtton.jsx';
+import CustomInputText from './general_components/customtextinput.jsx';
 
 const ModificationScreen = ({navigation}) => {
   return (

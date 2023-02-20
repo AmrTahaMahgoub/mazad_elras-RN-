@@ -1,7 +1,7 @@
 import React from 'react';
 import {FlatList} from 'react-native-gesture-handler';
 import {Text, View, Image, StyleSheet} from 'react-native';
-import Styles from '../all_screen/all_styles.jsx';
+import Styles from "../all_product_screen/all_product_styles.jsx";
 const Electronics = () => {
   const DATA = [
     {
@@ -9,9 +9,7 @@ const Electronics = () => {
       title: 'سيارة رانج روفر موديل 2010',
       address: 'المدينه المنورة سوق السيارات',
       name: 'رجب مبروك',
-
-      image: require('E:/projects/MazadElRAs/assets/car.jpg'),
-
+      image: require("./../../assets/car.jpg"),
       price: '70.000 ر.س',
       id: 1,
     },
@@ -21,7 +19,7 @@ const Electronics = () => {
       address: 'الرياض شارع عبد العزيز',
       name: 'فاطمه عبدالله',
 
-      image: require('E:/projects/MazadElRAs/assets/car.jpg'),
+      image: require('./../../assets/car.jpg'),
       price: '4.599 ر.س',
 
       id: 2,
@@ -32,7 +30,7 @@ const Electronics = () => {
       address: 'الطاثف سوق الجمال',
       name: 'عبدالله بن محمد',
 
-      image: require('E:/projects/MazadElRAs/assets/mobile.jpg'),
+      image: require('./../../assets/mobile.jpg'),
       price: '4.599 ر.س',
       id: 3,
     },
@@ -41,7 +39,7 @@ const Electronics = () => {
       title: 'موبايل ايفون 11 بروماكس 265',
       address: 'المدينه المنورة سوق السيارات',
       name: 'عمرو بن محجوب',
-      image: require('E:/projects/MazadElRAs/assets/mobile.jpg'),
+      image: require('./../../assets/mobile.jpg'),
 
       price: '4.599 ر.س',
       id: 4,
@@ -51,7 +49,7 @@ const Electronics = () => {
       title: 'ناقه صفراء للبيع ونتاج وفير',
       address: 'المدينه المنورة سوق السيارات',
       name: 'اسماء بنت على',
-      image: require('E:/projects/MazadElRAs/assets/mobile.jpg'),
+      image: require('./../../assets/mobile.jpg'),
 
       price: '4.599 ر.س',
       id: 5,
@@ -62,7 +60,7 @@ const Electronics = () => {
       address: 'المدينه المنورة سوق السيارات',
       name: 'اسماء بنت على',
 
-      image: require('E:/projects/MazadElRAs/assets/car.jpg'),
+      image: require('./../../assets/car.jpg'),
       price: '4.599 ر.س',
       id: 6,
     },
@@ -71,7 +69,7 @@ const Electronics = () => {
     <View style={Styles.card}>
       <Image
         style={Styles.heartImageStyle}
-        source={require('E:/projects/MazadElRAs/assets/heart.png')}></Image>
+        source={require('./../../assets/heart.png')}></Image>
       <View style={Styles.rowDataStyle}>
         <View style={Styles.columnStyle}>
           <Text>{date} </Text>
@@ -79,12 +77,12 @@ const Electronics = () => {
           <View style={Styles.row2DataStyle}>
             <Text>{address}</Text>
             <Image
-              source={require('E:/projects/MazadElRAs/assets/flagicon.png')}></Image>
+              source={require('./../../assets/flagicon.png')}></Image>
           </View>
           <View style={Styles.row3DataStyle}>
             <Text>{name}</Text>
             <Image
-              source={require('E:/projects/MazadElRAs/assets/maleicon.jpg')}></Image>
+              source={require('./../../assets/maleicon.jpg')}></Image>
           </View>
 
           <Text style={Styles.priceTextStyle}>{price}</Text>

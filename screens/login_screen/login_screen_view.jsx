@@ -1,8 +1,8 @@
 import {View, Text, Image, Pressable} from 'react-native';
 import React from 'react';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import CustomInputText from '../general_components/customtextinput';
-import CustomTextButton from '../general_components/customtextbtton';
+import CustomInputText from '../general_components/customtextinput.jsx';
+import CustomTextButton from '../general_components/customtextbtton.jsx';
 import Styles from './login_styles';
 function LoginScreen({navigation}) {
   return (
@@ -17,10 +17,10 @@ function LoginScreen({navigation}) {
           <View style={Styles.imagesStyle}>
             <Image
               style={{margin: '3%'}}
-              source={require('E:/projects/MazadElRAs/assets/mazadelras.png')}></Image>
+              source={require('./../../assets/mazadelras.png')}></Image>
 
             <Image
-              source={require('E:/projects/MazadElRAs/assets/hammer2.png')}></Image>
+              source={require('./../../assets/hammer2.png')}></Image>
           </View>
         </View>
       </View>

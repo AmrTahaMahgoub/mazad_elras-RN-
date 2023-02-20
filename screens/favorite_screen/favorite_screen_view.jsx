@@ -11,7 +11,7 @@ function FavoriteScreen() {
       image: (
         <Image
           style={{alignSelf: 'flex-end', marginStart: '3%', marginBottom: '3%'}}
-          source={require('E:/projects/MazadElRAs/assets/car.jpg')}></Image>
+          source={require('./../../assets/car.jpg')}></Image>
       ),
       price: '70.000 ر.س',
       id: 1,
@@ -24,7 +24,7 @@ function FavoriteScreen() {
       image: (
         <Image
           style={{alignSelf: 'flex-end', marginStart: '3%', marginBottom: '3%'}}
-          source={require('E:/projects/MazadElRAs/assets/mobile.jpg')}></Image>
+          source={require('./../../assets/mobile.jpg')}></Image>
       ),
       price: '4.599 ر.س',
 
@@ -51,7 +51,7 @@ function FavoriteScreen() {
       image: (
         <Image
           style={{alignSelf: 'flex-end', marginStart: '3%', marginBottom: '3%'}}
-          source={require('E:/projects/MazadElRAs/assets/car.jpg')}></Image>
+          source={require('./../../assets/car.jpg')}></Image>
       ),
       price: '4.599 ر.س',
       id: 4,
@@ -64,7 +64,7 @@ function FavoriteScreen() {
       image: (
         <Image
           style={{alignSelf: 'flex-end', marginStart: '3%', marginBottom: '3%'}}
-          source={require('E:/projects/MazadElRAs/assets/camel.png')}></Image>
+          source={require('./../../assets/camel.png')}></Image>
       ),
       price: '4.599 ر.س',
       id: 5,
@@ -77,7 +77,7 @@ function FavoriteScreen() {
       image: (
         <Image
           style={{alignSelf: 'flex-end', marginStart: '3%', marginBottom: '3%'}}
-          source={require('E:/projects/MazadElRAs/assets/camel.png')}></Image>
+          source={require('./../../assets/camel.png')}></Image>
       ),
       price: '4.599 ر.س',
       id: 6,
@@ -87,7 +87,7 @@ function FavoriteScreen() {
     <View style={styles.card}>
       <Image
         style={{alignSelf: 'flex-end', marginStart: '5%', marginBottom: '3%'}}
-        source={require('E:/projects/MazadElRAs/assets/redhearticon.png')}></Image>
+        source={require('./../../assets/redhearticon.png')}></Image>
       <View
         style={{
           flexDirection: 'row',
@@ -108,7 +108,7 @@ function FavoriteScreen() {
             }}>
             <Text>{address}</Text>
             <Image
-              source={require('E:/projects/MazadElRAs/assets/flagicon.png')}></Image>
+              source={require('./../../assets/flagicon.png')}></Image>
           </View>
           <View
             style={{
@@ -117,7 +117,7 @@ function FavoriteScreen() {
             }}>
             <Text>{name}</Text>
             <Image
-              source={require('E:/projects/MazadElRAs/assets/maleicon.jpg')}></Image>
+              source={require('./../../assets/maleicon.jpg')}></Image>
           </View>
 
           <Text
@@ -156,9 +156,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#F4F4',
     flex: 1,
 
-    // justifyContent: 'flex-start',
-    //  alignItems: 'center',
-    // height:"40%",
   },
   card: {
     flex: 1,
@@ -171,11 +168,7 @@ const styles = StyleSheet.create({
     marginVertical: '1%',
   },
   image: {
-    //"#F4F4"
-    // flexDirection:"row",
-    // justifyContent: 'flex-end',
-    // alignItems: 'flex-end',
-    // alignContent:"flex-end"
+ 
   },
 });
 export default FavoriteScreen;

@@ -33,7 +33,7 @@ function Tabs({navigation}) {
           tabBarIcon: ({}) => (
             <Image
              
-              source={require('E:/projects/MazadElRAs/assets/home.png')}
+              source={require('../assets/home.png')}
             />
           ),
         }}
@@ -137,7 +137,7 @@ function Tabs({navigation}) {
                   alignItems: 'center',
                 }}>
                 <Image
-                  source={require('E:/projects/MazadElRAs/assets/blackbell.png')}></Image>
+                  source={require('../assets/blackbell.png')}></Image>
                 <View
                   style={{
                     position: 'absolute',

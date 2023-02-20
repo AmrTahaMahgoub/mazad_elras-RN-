@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import {View, Dimensions, Image, Text, StyleSheet,Pressable } from 'react-native';
-import CustomPickerButton from '../general_components/custom_picker';
-import AccountStyles from './account_styles';
+import CustomPickerButton from '../general_components/custom_picker.jsx';
+import AccountStyles from './account_styles.jsx';
 import CustomAdvertises from "./account_widgets/custom_advertises.jsx"
 
 function AccountScreen({navigation}) {
@@ -56,7 +56,8 @@ function AccountScreen({navigation}) {
                   دفع المستحقات{' '}
                 </Text>
                 <Image
-                  source={require('E:/projects/MazadElRAs/assets/moneyicon.png')}></Image>
+                  source={require('./../../assets/moneyicon.png')}></Image>
+                 
               </View>
             </View>
             <View
@@ -81,7 +82,7 @@ function AccountScreen({navigation}) {
                   من نحن
                 </Text>
                 <Image
-                  source={require('E:/projects/MazadElRAs/assets/roundedexcelemationicon.png')}></Image>
+                  source={require('./../../assets/roundedexcelemationicon.png')}></Image>
               </View>
               <View
                 style={{borderBottomColor: '#F4F4F4', borderBottomWidth: 1}}
@@ -99,7 +100,7 @@ function AccountScreen({navigation}) {
                   سياسه الخصوصيه
                 </Text>
                 <Image
-                  source={require('E:/projects/MazadElRAs/assets/lockicon.png')}></Image>
+                  source={require('./../../assets/lockicon.png')}></Image>
               </View>
               <View
                 style={{borderBottomColor: '#F4F4F4', borderBottomWidth: 1}}
@@ -117,7 +118,7 @@ function AccountScreen({navigation}) {
                   الشروط والاحكام
                 </Text>
                 <Image
-                  source={require('E:/projects/MazadElRAs/assets/donephoneicon.png')}></Image>
+                  source={require('./../../assets/donephoneicon.png')}></Image>
               </View>
             </View>
             <View
@@ -165,7 +166,7 @@ function AccountScreen({navigation}) {
                     اللغه{' '}
                   </Text>
                   <Image
-                    source={require('E:/projects/MazadElRAs/assets/moneyicon.png')}></Image>
+                    source={require('./../../assets/moneyicon.png')}></Image>
                 </View>
               </View>
               <View
@@ -184,7 +185,7 @@ function AccountScreen({navigation}) {
                   تواصل معنا
                 </Text>
                 <Image
-                  source={require('E:/projects/MazadElRAs/assets/boldphoneicon.png')}></Image>
+                  source={require('./../../assets/boldphoneicon.png')}></Image>
               </View>
               <View
                 style={{borderBottomColor: '#F4F4F4', borderBottomWidth: 1}}
@@ -202,7 +203,7 @@ function AccountScreen({navigation}) {
                   مساعده
                 </Text>
                 <Image
-                  source={require('E:/projects/MazadElRAs/assets/roundedquestionicon.png')}></Image>
+                  source={require('./../../assets/roundedquestionicon.png')}></Image>
               </View>
             </View>
 
@@ -222,7 +223,7 @@ function AccountScreen({navigation}) {
                 تسجيل خروج{' '}
               </Text>
               <Image
-                source={require('E:/projects/MazadElRAs/assets/redarrowbackicon.png')}></Image>
+                source={require('./../../assets/redarrowbackicon.png')}></Image>
             </View>
           </View>
           <View
@@ -243,7 +244,7 @@ function AccountScreen({navigation}) {
                   borderWidth: 2,
                   borderRadius: 75,
                 }}
-                source={require('E:/projects/MazadElRAs/assets/saudiperson.jpg')}></Image>
+                source={require('./../../assets/saudiperson.jpg')}></Image>
             </View>
           </View>
         </View>

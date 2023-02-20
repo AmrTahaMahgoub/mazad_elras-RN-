@@ -4,9 +4,9 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Tabs from './bottom_tab';
 import {TouchableOpacity, Text, View, Image, Dimensions} from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
-import LoginScreen from './login_screen/login_screen_view';
-import RegisterScreen from './register_screen/register_screen_view';
-import ModificationScreen from './modificationscreen';
+import LoginScreen from './login_screen/login_screen_view.jsx';
+import RegisterScreen from './register_screen/register_screen_view.jsx';
+import ModificationScreen from './modificationscreen.jsx';
 
 const Stack = createStackNavigator();
 

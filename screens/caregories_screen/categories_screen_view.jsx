@@ -7,137 +7,79 @@ function CategoriesScreen() {
   const DATA = [
     {
       title: 'معدات',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage1.png')}></Image>
-      ),
+   
+      image:require('./../../assets/secimage1.png'),
       id: 1,
     },
     {
       title: 'فراخ',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage2.png')}></Image>
-      ),
+      image: require('./../../assets/secimage2.png'),
       id: 2,
     },
     {
       title: 'اليكترونيات',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage10.png')}></Image>
-      ),
+      image: require('./../../assets/secimage10.png'),
       id: 3,
     },
     {
       title: 'جمال',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage4.png')}></Image>
-      ),
+      image:require('./../../assets/secimage4.png'),
       id: 4,
     },
     {
       title: 'اعلاف',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage5.png')}></Image>
-      ),
+      image: 
+        require('./../../assets/secimage5.png'),
       id: 5,
     },
     {
       title: 'ماعز',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage6.png')}></Image>
-      ),
+      image: require('./../../assets/secimage6.png'),
       id: 6,
     },
     {
       title: 'سيارات',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage7.png')}></Image>
-      ),
+      image: require('./../../assets/secimage7.png'),
       id: 7,
     },
     {
       title: 'جمال',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage8.png')}></Image>
-      ),
+      image: require('./../../assets/secimage8.png'),
       id: 8,
     },
     {
       title: 'اليكترونيات',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage10.png')}></Image>
-      ),
+      image:require('./../../assets/secimage10.png'),
       id: 9,
     },
     {
       title: 'ادويه',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage9.png')}></Image>
-      ),
+      image: require('./../../assets/secimage9.png'),
       id: 10,
     },
     {
       title: 'اليكترونيات',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage10.png')}></Image>
-      ),
+      image: require('./../../assets/secimage10.png'),
       id: 11,
     },
     {
       title: 'ماعز',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage6.png')}></Image>
-      ),
+      image: require('./../../assets/secimage6.png'),
       id: 12,
     },
     {
       title: 'جمال',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage8.png')}></Image>
-      ),
+      image: require('./../../assets/secimage8.png'),
       id: 13,
     },
     {
       title: 'اليكترونيات',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage10.png')}></Image>
-      ),
+      image: require('./../../assets/secimage10.png'),
       id: 14,
     },
     {
       title: 'ادويه',
-      image: (
-        <Image
-          style={{marginVertical: '10%'}}
-          source={require('E:/projects/MazadElRAs/assets/secimage9.png')}></Image>
-      ),
+      image: require('./../../assets/secimage9.png'),
       id: 15,
     },
   ];
@@ -152,13 +94,11 @@ function CategoriesScreen() {
         alignItems: 'center',
         paddingVertical: '8%',
         borderRadius: 16,
-
-        // marginVertical:"5%",
-        // height: "100%",
-        // width: "10%",
         margin: '1%',
       }}>
-      {image}
+       <Image
+           style={{marginVertical: '10%'}}
+          source={image}></Image>
       <Text style={{fontFamily: 'Tajawal-Bold'}}> {title}</Text>
     </View>
   );
@@ -170,7 +110,7 @@ function CategoriesScreen() {
           <Item title={item.title} image={item.image}></Item>
         )}
         numColumns={3}
-        //  contentContainerStyle={{flexGrow:1}}
+    
 
         keyExtractor={item => item.id}></FlatList>
     </View>
@@ -178,15 +118,7 @@ function CategoriesScreen() {
 }
 
 const styles = StyleSheet.create({
-  // container: {
-  //   flexDirection: 'column',
-  //   backgroundColor: "#F4F4",
-  //   flex: 1,
 
-  //   // justifyContent: 'flex-start',
-  //   //  alignItems: 'center',
-  //   // height:"40%",
-  // },
   container: {
     flex: 1,
     justifyContent: 'center',
@@ -205,12 +137,8 @@ const styles = StyleSheet.create({
     marginVertical: '1%',
   },
   image: {
-    //"#F4F4"
-    // flexDirection:"row",
-    // justifyContent: 'flex-end',
-    // alignItems: 'flex-end',
-    // alignContent:"flex-end"
+
   },
 });
 export default CategoriesScreen;
-//style={{ alignSelf: "flex-end", marginStart: "3%", marginBottom: "3%" }}
+

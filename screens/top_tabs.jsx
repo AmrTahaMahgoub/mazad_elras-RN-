@@ -1,12 +1,12 @@
 import React from 'react';
 import {StyleSheet} from 'react-native';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
-import All from './all_screen/all_screen_view';
-import Cars from './cars_screen/cars_screen_view';
-import Animals from './animals_screen/animals_screen_view';
-import Foods from './foods_screen/foods_screen_view';
-import Building from './building_screen/building_screen_view';
-import Electronics from './electronics_screen/electronics_screen_view';
+import All from './all_product_screen/all_product_screen_view.jsx';
+import Cars from './cars_screen/cars_screen_view.jsx';
+import Animals from './animals_screen/animals_screen_view.jsx';
+import Foods from './foods_screen/foods_screen_view.jsx';
+import Building from './building_screen/building_screen_view.jsx';
+import Electronics from './electronics_screen/electronics_screen_view.jsx';
 
 const Tab = createMaterialTopTabNavigator();
 

@@ -1,8 +1,8 @@
 import React from 'react';
 import {StyleSheet, View} from 'react-native';
-import CustomInputText from '../general_components/customtextinput';
-import CustomTextButton from '../general_components/customtextbtton';
-import Styles from './register_styles';
+import CustomInputText from '../general_components/customtextinput.jsx';
+import CustomTextButton from '../general_components/customtextbtton.jsx';
+import Styles from './register_styles.jsx';
 
 const RegisterScreen = ({navigation}) => {
   return (

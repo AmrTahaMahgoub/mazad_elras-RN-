@@ -1,7 +1,7 @@
 import {View, Text, Image, TextInput, StyleSheet} from 'react-native';
 import {ScrollView} from 'react-native-gesture-handler';
-import CustomInputText from '../general_components/customtextinput';
-import CustomTextButton from '../general_components/customtextbtton';
+import CustomInputText from '../general_components/customtextinput.jsx';
+import CustomTextButton from '../general_components/customtextbtton.jsx';
 import AddStyles from './add_styles.jsx';
 import CustomPickerButton from '../general_components/custom_picker.jsx';
 function AddScreen() {
@@ -36,19 +36,19 @@ function AddScreen() {
           <View style={AddStyles.scrollViewStyle}>
             <Image
               style={{margin: '1%'}}
-              source={require('E:/projects/MazadElRAs/assets/car.jpg')}></Image>
+              source={require('./../../assets/car.jpg')}></Image>
             <Image
               style={{margin: '1%'}}
-              source={require('E:/projects/MazadElRAs/assets/car.jpg')}></Image>
+              source={require('./../../assets/car.jpg')}></Image>
             <Image
               style={{margin: '1%'}}
-              source={require('E:/projects/MazadElRAs/assets/car.jpg')}></Image>
+              source={require('./../../assets/car.jpg')}></Image>
             <Image
               style={{margin: '1%'}}
-              source={require('E:/projects/MazadElRAs/assets/car.jpg')}></Image>
+              source={require('./../../assets/car.jpg')}></Image>
             <Image
               style={{margin: '1%'}}
-              source={require('E:/projects/MazadElRAs/assets/car.jpg')}></Image>
+              source={require('./../../assets/car.jpg')}></Image>
           </View>
         </ScrollView>
         <Text style={{alignSelf: 'flex-end'}}>
