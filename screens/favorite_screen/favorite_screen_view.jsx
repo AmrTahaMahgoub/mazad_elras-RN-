@@ -8,11 +8,7 @@ function FavoriteScreen() {
       title: 'سيارة رانج روفر موديل 2010',
       address: 'المدينه المنورة سوق السيارات',
       name: 'رجب مبروك',
-      image: (
-        <Image
-          style={{alignSelf: 'flex-end', marginStart: '3%', marginBottom: '3%'}}
-          source={require('./../../assets/car.jpg')}></Image>
-      ),
+      image: require('./../../assets/car.jpg'),
       price: '70.000 ر.س',
       id: 1,
     },
@@ -21,11 +17,7 @@ function FavoriteScreen() {
       title: 'موبايل ايفون 11 بروماكس 265',
       address: 'الرياض شارع عبد العزيز',
       name: 'فاطمه عبدالله',
-      image: (
-        <Image
-          style={{alignSelf: 'flex-end', marginStart: '3%', marginBottom: '3%'}}
-          source={require('./../../assets/mobile.jpg')}></Image>
-      ),
+      image: require('./../../assets/mobile.jpg'),
       price: '4.599 ر.س',
 
       id: 2,
@@ -35,11 +27,7 @@ function FavoriteScreen() {
       title: 'شقه مطله على حديقه الفوطه',
       address: 'الطاثف سوق الجمال',
       name: 'عبدالله بن محمد',
-      image: (
-        <Image
-          style={{alignSelf: 'flex-end', marginStart: '3%', marginBottom: '3%'}}
-          source={require('E:/projects/MazadElRAs/assets/camel.png')}></Image>
-      ),
+      image: require('./../../assets/camel.png'),
       price: '4.599 ر.س',
       id: 3,
     },
@@ -48,11 +36,7 @@ function FavoriteScreen() {
       title: 'موبايل ايفون 11 بروماكس 265',
       address: 'المدينه المنورة سوق السيارات',
       name: 'عمرو بن محجوب',
-      image: (
-        <Image
-          style={{alignSelf: 'flex-end', marginStart: '3%', marginBottom: '3%'}}
-          source={require('./../../assets/car.jpg')}></Image>
-      ),
+      image:require('./../../assets/car.jpg'),
       price: '4.599 ر.س',
       id: 4,
     },
@@ -61,11 +45,7 @@ function FavoriteScreen() {
       title: 'ناقه صفراء للبيع ونتاج وفير',
       address: 'المدينه المنورة سوق السيارات',
       name: 'اسماء بنت على',
-      image: (
-        <Image
-          style={{alignSelf: 'flex-end', marginStart: '3%', marginBottom: '3%'}}
-          source={require('./../../assets/camel.png')}></Image>
-      ),
+      image: require('./../../assets/camel.png'),
       price: '4.599 ر.س',
       id: 5,
     },
@@ -74,11 +54,7 @@ function FavoriteScreen() {
       title: 'ناقه صفراء للبيع ونتاج وفير',
       address: 'المدينه المنورة سوق السيارات',
       name: 'اسماء بنت على',
-      image: (
-        <Image
-          style={{alignSelf: 'flex-end', marginStart: '3%', marginBottom: '3%'}}
-          source={require('./../../assets/camel.png')}></Image>
-      ),
+      image: require('./../../assets/camel.png'),
       price: '4.599 ر.س',
       id: 6,
     },
@@ -107,8 +83,7 @@ function FavoriteScreen() {
               justifyContent: 'flex-end',
             }}>
             <Text>{address}</Text>
-            <Image
-              source={require('./../../assets/flagicon.png')}></Image>
+            <Image source={require('./../../assets/flagicon.png')}></Image>
           </View>
           <View
             style={{
@@ -116,8 +91,7 @@ function FavoriteScreen() {
               justifyContent: 'flex-end',
             }}>
             <Text>{name}</Text>
-            <Image
-              source={require('./../../assets/maleicon.jpg')}></Image>
+            <Image source={require('./../../assets/maleicon.jpg')}></Image>
           </View>
 
           <Text
@@ -129,7 +103,9 @@ function FavoriteScreen() {
             {price}
           </Text>
         </View>
-        {image}
+        <Image
+          style={{alignSelf: 'flex-end', marginStart: '3%', marginBottom: '3%'}}
+          source={image}></Image>
       </View>
     </View>
   );
@@ -155,7 +131,6 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
     backgroundColor: '#F4F4',
     flex: 1,
-
   },
   card: {
     flex: 1,
@@ -167,8 +142,6 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginVertical: '1%',
   },
-  image: {
- 
-  },
+  image: {},
 });
 export default FavoriteScreen;
