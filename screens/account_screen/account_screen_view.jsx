@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
-import {View, Dimensions, Image, Text, StyleSheet,Pressable } from 'react-native';
-import { ScrollView } from 'react-native-gesture-handler';
+import {View, Image, Text, StyleSheet,Pressable ,ScrollView} from 'react-native';
+
 import CustomPickerButton from '../general_components/custom_picker.jsx';
 import AccountStyles from './account_styles.jsx';
 import CustomAdvertises from "./account_widgets/custom_advertises.jsx"
@@ -8,11 +8,12 @@ import CustomAdvertises from "./account_widgets/custom_advertises.jsx"
 function AccountScreen({navigation}) {
   const [country, setCountry] = useState('Unknown');
   return (
-    <ScrollView>
-      <View style={{flex: 1}}>
+  
+     <ScrollView> <View style={{flex: 1}}>
         <View style={{backgroundColor: '#F4F4F4', flex: 1}}>
           <View style={{backgroundColor: '#4982FF', height: '20%'}}></View>
-          <View style={AccountStyles.mainTransparentColumn}>
+        
+        <View style={AccountStyles.mainTransparentColumn}>
             <View style={AccountStyles.firstContainerStyle}>
               <Text style={AccountStyles.nameTextStyle}>عبدالرحمن بن محمد</Text>
               <Pressable
@@ -227,6 +228,8 @@ function AccountScreen({navigation}) {
                 source={require('./../../assets/redarrowbackicon.png')}></Image>
             </View>
           </View>
+         
+       
           <View
             style={{
               position: 'absolute',
@@ -249,8 +252,8 @@ function AccountScreen({navigation}) {
             </View>
           </View>
         </View>
-      </View>
-    </ScrollView>
+      </View></ScrollView>
+    
   );
 }
 const styles = StyleSheet.create({
