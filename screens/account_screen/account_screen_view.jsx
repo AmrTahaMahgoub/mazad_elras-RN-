@@ -9,7 +9,7 @@ function AccountScreen({navigation}) {
   const [country, setCountry] = useState('Unknown');
   return (
   
-     <ScrollView> <View style={{flex: 1}}>
+<View  style={{flex:1}}>
         <View style={{backgroundColor: '#F4F4F4', flex: 1}}>
           <View style={{backgroundColor: '#4982FF', height: '20%'}}></View>
         
@@ -228,8 +228,7 @@ function AccountScreen({navigation}) {
                 source={require('./../../assets/redarrowbackicon.png')}></Image>
             </View>
           </View>
-         
-       
+        
           <View
             style={{
               position: 'absolute',
@@ -252,7 +251,7 @@ function AccountScreen({navigation}) {
             </View>
           </View>
         </View>
-      </View></ScrollView>
+      </View>
     
   );
 }

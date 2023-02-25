@@ -7,6 +7,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import LoginScreen from './login_screen/login_screen_view.jsx';
 import RegisterScreen from './register_screen/register_screen_view.jsx';
 import ModificationScreen from './modificationscreen.jsx';
+import AdvsAddedSuccess from './advs_added_successuflly/advs_added_succsess_view';
 
 const Stack = createStackNavigator();
 
@@ -14,6 +15,7 @@ function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+   
         <Stack.Screen
           name="Login_Screen"
           component={LoginScreen}
@@ -71,6 +73,13 @@ function App() {
         <Stack.Screen
           name="ModificationScreen"
           component={ModificationScreen}
+          options={{
+            header: () => null,
+          }}
+        />
+           <Stack.Screen
+          name="Advs_Success"
+          component={AdvsAddedSuccess}
           options={{
             header: () => null,
           }}

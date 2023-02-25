@@ -4,7 +4,7 @@ import CustomInputText from '../general_components/customtextinput.jsx';
 import CustomTextButton from '../general_components/customtextbtton.jsx';
 import AddStyles from './add_styles.jsx';
 import CustomPickerButton from '../general_components/custom_picker.jsx';
-function AddScreen() {
+function AddScreen({navigation}) {
   return (
     <ScrollView>
       <View style={AddStyles.mainContainerStyle}>
@@ -72,7 +72,7 @@ function AddScreen() {
           name={'مكان الاستلام'}
           title={'اكتب العنونان بالتفصيل...'}></CustomInputText>
         <View style={{marginVertical: '2%'}}>
-          <CustomTextButton title={'+ اضف الاعلان'}></CustomTextButton>
+          <CustomTextButton title={'+ اضف الاعلان'} onPress={()=>{navigation.navigate("Advs_Success")}}></CustomTextButton>
         </View>
       </View>
     </ScrollView>
